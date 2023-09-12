@@ -1,0 +1,1 @@
+Gh-pages link: https://mrgarshin.github.io/cssMemeSlider/cssMemeSlider/index.html
