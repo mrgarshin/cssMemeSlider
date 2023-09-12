@@ -2,24 +2,24 @@ body {
   background-color: rgb(37,40,42);
 }
 .wrapper {
-  max-width: 700px;
-  height: 400px;
+  max-width: 50vw;
+  height: 50vh;
   display: grid;
-  row-gap: 20px;
+  row-gap: 1.4vh;
   grid-template-areas:
     "img img img img"
     "description description description controls";
   overflow:hidden;
   margin: 0 auto;
-  padding: 10px 20px;
-  border: 5px solid black;
-  border-radius: 5px;
+  padding: 1.4vh 1.6vw;
+  border: 0.1rem solid rgba(0, 0, 0, 0.5);
+  border-radius: 0.4rem;
 }
 .img__wrapper {
   grid-area: img;
   width: 100%;
+  height: 42vh;
   overflow: hidden;
-  border-radius: 5px;
 }
 .meme-img__container {
   display: flex;
@@ -37,7 +37,7 @@ body {
 }
 .meme-description {
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   animation: hi 3s ease;
 }
 .meme-controls__container {
@@ -60,12 +60,12 @@ body {
 }
 .meme-control {
   cursor: pointer;
-  padding: 3px;
+  padding: 0.3rem;
 }
 .meme__radio-span {
   display: block;
   border-radius: 50%;
-  border: 1px solid rgb(121,169,239);
+  border: 0.1rem solid rgb(121,169,239);
   box-sizing: border-box;
   width: 0.5rem;
   height: 0.5rem;
@@ -73,7 +73,7 @@ body {
   cursor: pointer;
 }
 .meme-control:hover > .meme__radio-span {
-  border: 1px solid white;
+  border: 0.1rem solid white;
   background: white;
 }
 /* Изменения элементов в блоке controls */
@@ -146,5 +146,8 @@ body {
   }
   .meme-controls__container {
     justify-content: center;
+  }
+  .meme-description {
+    font-size: 0.7rem;
   }
 }
